@@ -1,7 +1,7 @@
-import face_recognition
 import numpy as np
 import cv2
 import os
+import face_recognition
 from datetime import datetime
 
 path = 'Images'
@@ -44,7 +44,7 @@ def markAttendence(name):
 
 encodeListKnown = findEncoding(images)
 # print(len(encodeListKnown))
-print("Encode complete")
+# print("Encode complete")
 cap = cv2.VideoCapture(0)
 while True:
     success, img = cap.read()
